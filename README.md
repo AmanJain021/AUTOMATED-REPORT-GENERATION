@@ -16,4 +16,6 @@ This project showcases the implementation of an Automated Report Generation Syst
 
 # OUTPUT
 
+sales_report1.pdf is the generated output pdf
+
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/6ab70a26-6a4b-408a-9572-8efd1b058b7e" />
