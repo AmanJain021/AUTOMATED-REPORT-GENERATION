@@ -30,7 +30,7 @@ def load_data(file_path):
 os.makedirs("charts", exist_ok=True)
 
 # === Load Data ===
-file_path = "d:\CODTechITIntern\Task2\sales_data.csv"  # or .xlsx, .json, .txt
+file_path = "sales_data.csv"  # or .xlsx, .json, .txt #specify full path if there is an error
 df = load_data(file_path)
 print(df.head())
 df["Date"] = pd.to_datetime(df["Date"], errors='coerce')
@@ -83,5 +83,5 @@ pdf.chapter_body(summary)
 pdf.chapter_title("Sales by Product")
 pdf.add_image("charts/sales_by_product.png")
 
-pdf.output("d:\CODTechITIntern\Task2\sales_report1.pdf")
+pdf.output("sales_report1.pdf")  # Specify full path if there exists an error
 print("✅ Report Generated: sales_report1.pdf")
